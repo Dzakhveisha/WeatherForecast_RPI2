@@ -1,0 +1,162 @@
+body{
+
+    font-family: Montserrat;
+    font-style: normal;
+    color: #c0d4de;
+    background-image: url('img/fon.jpg');
+    background-size: 100%;
+}
+button{
+    padding: 0;
+    border: none;
+    font: inherit;
+    background-color: #282848;
+    cursor: pointer;
+}
+
+
+#controls{
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#controls form{
+    position: relative;
+    width: 400px;
+    margin: 0 50px;
+}
+#controls input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    border: 2px solid #282848;
+    border-radius: 5px;
+    outline: none;
+    background: #ffffff;
+    color: #2c2c2f;
+    float: left;
+}
+#controls #search {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+}
+#controls #search img{
+    border-radius: 0 5px 5px 0;
+    height: 30px;
+    width: 30px;
+}
+#controls #buttons{
+    margin-left: 40px;
+}
+#controls button{
+
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+    width: 40px;
+    height: 40px;
+}
+button:hover{
+    background-color: #373762;
+}
+button:active{
+    background-color: black;
+}
+#controls button img{
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+
+
+#wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 60px 0 50px;
+    text-transform: uppercase;
+}
+
+#weather{
+    background: rgba(58, 54, 59, 0.6);
+    padding: 10px 20px;
+    border-radius: 5%;
+    height: 550px;
+}
+#weatherForecast{
+    background: rgba(58, 54, 59, 0.6);
+    padding: 10px 20px;
+    border-radius: 5%;
+    height: 550px;
+}
+
+
+#weather h2{
+    margin: 30px 0px 20px 0;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+#weather #time, #today{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 29px;
+}
+#today{
+    float: left;
+    margin-right: 30px;
+}
+#weather #temperature{
+    font-weight: bold;
+    font-size: 306px;
+    line-height: 373px;
+    text-transform: uppercase;
+    width: 500px;
+    text-align: center;
+}
+#weather #weatherNow{
+    display: flex;
+}
+#weather #properties{
+    list-style: none;
+    margin: 0px 40px 50px 50px;
+}
+#properties li{
+    margin: 10px 0;
+}
+#imgWeather{
+    width: 150px;
+    height: 150px;
+}
+
+#weatherForecast{
+    margin: auto auto auto 250px;
+    display: flex;
+    flex-direction: column;
+}
+.forecast{
+    margin-bottom: 10px;
+}
+.forecast h4{
+    margin-bottom: 0px ;
+}
+.forecastTemperature{
+    display: flex;
+    justify-content: space-around;
+}
+.forecastTemperature h3{
+    margin: 0;
+    font-weight: 600;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+.forecastTemperature img{
+    width: 64px;
+    height: 64px;
+    margin: auto 0 auto ;
+}

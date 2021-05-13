@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+
+    <div id = controls>
+        <div id = "buttons">
+            <button onclick="changeImage()" id = "changeImg">  <img src="img/change.svg">  </button>
+            <button id = "celsia">   <img src="img/celsia.png"> </button>
+        </div>
+        <form id="searchForm" method="post">
+            <input id="cityInput" type="search"  placeholder="Искать город здесь...">
+            <button id="search"  onclick="getWeatherByCity()" type="submit"> <img src="img/search.png"> </button>
+        </form>
+    </div>
+
+    <div id="wrapper">
+
+    <div id = "weather">
+        <h2 id = "city"> Минск, Беларусь</h2>
+        <div id ="today"> Пон 28 Октября </div>
+        <div id="time"> 17:23:56 </div>
+        <div id="weatherNow">
+            <div id="temperature"> 10° </div>
+            <ul id="properties">
+                <li> <img id="imgWeather" src="" width="120"></li>
+                <li id="weatherDescr"> пасмурно </li>
+                <li id="weatherFill">ощущается как: 7° </li>
+                <li id="wind">ветер: 2 m/s </li>
+                <li id="humidity">влажность: 83% </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id = "weatherForecast">
+        <div class="forecast" id="day1">
+            <h4> Вторник </h4>
+            <div class="forecastTemperature">
+                <h3> 6° </h3>
+                <img src="#">
+            </div>
+        </div>
+        <div class="forecast" id="day2">
+            <h4> Среда </h4>
+            <div class="forecastTemperature">
+                <h3> 6° </h3>
+                 <img src="#">
+            </div>
+         </div>
+        <div class="forecast" id="day3">
+             <h4> Четверг </h4>
+             <div class="forecastTemperature">
+                <h3> 6° </h3>
+                <img src="#">
+              </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="main.js"> </script>
+    <script src = "startInit.js"> </script>
+
+</body>
+<script src="changeImage.js"> </script>
+</html>
