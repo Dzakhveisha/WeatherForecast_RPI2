@@ -11,7 +11,8 @@ async function getWeatherByCity() {
             data = data["data"][0];
             console.log(data);
             document.getElementById("temperature").innerText = Math.round(data["temp"]);
-            document.getElementById("city").innerText = data["city_name"] + ", " + data["country_code"];
+            let regionNames = new Intl.DisplayNames([LANG], {type: 'region'});
+            document.getElementById("city").innerText = city + ", " + regionNames.of(data["country_code"]);
             document.getElementById("weatherDescr").innerText = data["weather"]["description"];
             document.getElementById("wind").innerText = 'ветер: ' + Math.round(data["wind_spd"]) + ' м/с';
             document.getElementById("humidity").innerText ='влажность: ' + Math.round(data["rh"]) + '%';
